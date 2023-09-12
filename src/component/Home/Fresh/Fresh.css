@@ -1,0 +1,120 @@
+.fresh{
+    background-color: #eeecea ;
+    position: relative;
+}
+.basil{
+    position: absolute;
+    margin-top: -40px;
+    right: 46%;
+}
+.card2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+    justify-content: center;
+    margin: 2rem;   
+}
+
+.boxfresh{
+    z-index: 99;
+    position: relative;
+    width: 23rem;
+    height: 19rem;
+    background-color: #fefefe;
+    padding: 2rem;
+    margin: 10rem 1rem;
+    margin-bottom: 5rem;
+}
+.ming{
+    position: relative;
+    z-index: 9;
+}
+.bgimg{
+    position: absolute;
+    bottom: 0;
+    top:10;
+    right: 0;
+}
+
+.bg{
+    width: 14rem;
+    height: auto;
+    z-index: 9;
+}
+
+.fresh p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1240px) {
+    .boxfresh{
+        width: 18rem;
+        margin: 7rem 1rem;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .card2{
+        padding: 5rem 0;
+        grid-template-columns: 1fr;
+    }
+    .boxfresh{
+        width: 100%;
+        background-color: #fefefe;
+        padding: 2rem;
+        margin:  auto;
+    }
+    .fresh button {
+        border: none;
+        background-color: #8bc34a;
+        margin-top: 1rem ;
+        color:#fffffe;
+        padding: 1.5rem 3rem;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    .fresh .btn2{
+        margin-top: 5rem;
+    }
+    .fresh p{
+        font-size: 24px;
+    }
+    .basil{
+        right: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .ming{
+        justify-content: center;
+        text-align: center; 
+    }
+    
+    .basil{
+        right: 35%;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .boxfresh{
+        height: 21rem;
+        width: 100%;
+        background-color: #fefefe;
+        padding: 2rem;
+        margin: 0 auto;
+        margin-top:  4rem;
+    }
+    .fresh .btn2{
+        margin-top: 2rem;
+    }
+    .basil{
+        position: absolute;
+        margin-top: -35px;
+        right: 32%;
+    }
+    .basil img{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 10rem;
+    }
+
+}

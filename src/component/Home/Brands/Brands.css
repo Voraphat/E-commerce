@@ -1,0 +1,15 @@
+
+.container-brans{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.img-brands{
+    text-align: center;
+}
+
+@media screen and (max-width:1060px) {
+    .container-brans{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,129 @@
+
+#img{
+    width: 35rem;
+    height: 30rem;
+    margin: 3rem;
+} 
+.bank{
+    position: absolute;
+    top: 25rem;
+    height: 18rem;
+    right: 0;
+    opacity: .2;
+    z-index: 0;
+}
+.hero .container{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    z-index: 20;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+  }
+  
+.content{
+    margin: auto;
+}
+.img-head{
+    width: 5rem;
+}
+
+.text2{
+    padding: .5rem 0;
+}
+
+
+  @media screen and (max-width: 940px) {
+    #img{
+        width: 20rem;
+        height: 20rem;  
+    }
+    .bank{
+        top: 19rem;
+        right: 0;
+        height:  15rem ;
+    }
+}
+ @media screen and (max-width: 600px) {
+    .hero .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .tree{
+        text-align: center;
+    }
+    .text1{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .text2{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .hero p{
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* .btn2{
+        text-align: center;
+    } */
+    .btn2{
+        margin: auto;
+        margin-bottom: 1rem;
+
+    }
+    #img{
+        margin: auto;
+        margin-top: 1rem;
+        width: 18rem;
+        height: 15rem; 
+    }
+    .bank{
+        top: 37rem;
+        right: 0;
+        height:  8rem ;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    #img{
+        margin-top: 1rem;
+        width: 12rem;
+        height: 10rem; 
+    }
+    .hero .container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .tree{
+        text-align: center;
+    }
+    .text1{
+        text-align: center;
+    }
+    .text2{
+        text-align: center;
+    }
+    .hero p{
+        padding: 0 1rem;
+        font-size: 15px;
+        text-align: center;
+    }
+    .bank{
+        top: 30rem;
+        right: 0;
+        height:  5rem ;
+    }
+   
+}
+
+
+
+
+
+

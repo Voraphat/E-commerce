@@ -1,0 +1,55 @@
+.box-text-get{
+    background-color: #111111;
+    position: relative;
+}
+
+.text-get{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    color: #fefefe;
+    z-index: 10;
+    text-align: center;   
+
+}
+.box-text-try{
+    background-color: #eeecea ;
+}
+.box-sc{
+    position: absolute;
+    right: 50%;
+    top: 8.4rem;
+    width: 25px;
+    height: 30px;
+    background-color: #111111;
+    z-index: 9;
+    transform: rotate(45deg);
+}
+.Get .try{
+    padding: 2rem ;
+    text-align: center;   
+}
+
+@media screen and (max-width: 1000px) {
+    .text-get{
+        width: 100%;
+        flex-direction: column;
+    }
+    .box-sc{
+        display: none;
+    }
+
+    @media screen and (max-width: 700px) {
+        .text-get h2{
+            font-size: 2.25rem ;
+        }
+
+    }
+    @media screen and (max-width: 600px) {
+        .text-get h2{
+            font-size: 1.75rem ;
+        }
+    }

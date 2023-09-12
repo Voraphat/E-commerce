@@ -1,0 +1,43 @@
+.about h1{
+    text-align: center;
+    margin : 5rem 0;
+ 
+}
+.about .container{
+    padding: 0 1rem;
+
+}
+
+.img-about{
+    text-align: center;
+}
+.img-about img{
+    width: 10rem;
+    margin-bottom: 5rem;
+}
+.about-buttom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+}
+.letf-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.letf-about p{
+    width: 90%;
+}
+
+.img-right-about img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width : 800px) {
+    .about-buttom{
+        grid-template-columns: 1fr ;
+        row-gap: 3rem;
+    }
+}

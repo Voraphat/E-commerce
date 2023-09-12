@@ -1,0 +1,21 @@
+.related-products{
+    margin-top: 2rem;
+}
+.related-products ul{
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+}
+.img_random{
+    width: 100%
+}
+.img_random img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+.text_random{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}

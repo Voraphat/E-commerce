@@ -1,0 +1,51 @@
+.checkout .container{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 3rem auto;
+}
+.billing_details {
+  flex: 2;
+  padding: 10px;
+}
+.youroder {
+  flex: 1;
+  padding: 10px;
+  border: solid 2px #ddd;
+  height: 100%;
+}
+.youroder tr{
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.youroder table{
+  border: none;
+}
+.youroder button{
+  width: 100%;
+}
+.text_order p{
+  margin: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #EFEFEF;
+}
+
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

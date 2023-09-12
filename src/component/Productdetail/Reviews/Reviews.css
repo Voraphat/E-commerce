@@ -1,0 +1,46 @@
+.reviews .container{
+    background-color: #f9f4f4;
+    border: solid #ddd 1px;
+    padding: 1rem;
+}
+.top_reviews{
+  margin: 2rem 0;
+}
+
+.top_reviews li{
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+form textarea,form input {
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.2rem;
+
+}
+.form-group{
+  display: flex;
+}
+.half {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width : 600px) {
+  form input {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  
+}

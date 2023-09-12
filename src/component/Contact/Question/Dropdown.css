@@ -1,0 +1,26 @@
+.wrapper-menu-dropdown .container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    row-gap: 1rem;
+    column-gap: 5rem;
+    padding: 0 2rem;
+    justify-content: center;
+    margin-bottom: 10rem;
+} 
+.top-menu-dropdown{ 
+    margin: 5rem 0;
+    text-align: center;
+}
+.wrapper-item-dropdown{
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #c7c7c7 ;
+}
+.content-dropdown{
+    margin-top: 1rem;
+}
+@media screen and (max-width :850px){
+    .wrapper-menu-dropdown .container{
+        grid-template-columns: repeat(1,auto);
+    } 
+}
