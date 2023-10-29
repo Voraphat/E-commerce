@@ -10,8 +10,6 @@
 ![Logo](/src/assets/Logo.JPG)
 
 
-
-
 ## Importance
 This project was built using React and other libraries to ensure efficient and high-quality development.
 
