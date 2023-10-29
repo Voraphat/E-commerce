@@ -100,32 +100,4 @@ const Reviews = ({ product }) => {
   );
 };
 
-  // const [review, setReview] = useState("");
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [reviews, setReviews] = useState([]);
-  // const handleReviewChange = (e) => {
-  //   setReview(e.target.value);
-  // };
-  // const handleNameChange = (e) => {
-  //   setName(e.target.value);
-  // };
-  // const handleEmailChange = (e) => {
-  //   setEmail(e.target.value);
-  // };
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const newReview = {
-  //     review,
-  //     name,
-  //     email,
-  //   };
-  //   setReviews([...reviews, newReview]);
-  //   console.log("Review:", review);
-  //   console.log("Name:", name);
-  //   console.log("Email:", email);
-  //   setReview("");
-  //   setName("");
-  //   setEmail("");
-  // };
 export default Reviews;

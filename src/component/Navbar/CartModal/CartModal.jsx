@@ -27,19 +27,16 @@ const CartModal = ({ showCartModal, handleCartModal }) => {
 
   const updatedCartProducts = Array.from(productMap.values());
 
-  // เปิดปิดตระกร้า
   const handleModalClick = (event) => {
     if (event.target === modalRef.current) {
       handleCartModal();
     }
   };
 
-  // ฟังก์ชั่นลบสินค้า
   const handleRemoveFromCart = (productId) => {
     const updatedCart = cartProducts.filter(
       (product) => product.id !== productId
     );
-    // console.log('Updated Cart:', updatedCart);
     setCartProducts(updatedCart);
   };
 

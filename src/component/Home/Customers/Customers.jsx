@@ -20,11 +20,9 @@ const Customers = () => {
       </div>
 
       
-{/* div-mom-of-card */}
     <div className="card-customer-m">
 
 
-{/* card no.1  */}
       <div className="card-customer">
         <div className="icon-start-customer">
         <BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/>
@@ -45,7 +43,6 @@ const Customers = () => {
       </div>
 
 
-{/* card no.2  */}
       <div className="card-promote">
       <img src={sydney} alt="" />
         <div className="content-card-promote">
@@ -61,7 +58,6 @@ const Customers = () => {
 
 
 
-{/* card no.3  */}
       <div className="card-customer">
         <div className="icon-start-customer">
         <BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/>

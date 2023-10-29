@@ -13,8 +13,7 @@ const ProductDetailpage = () => {
 
   const { id } = useParams();
 
-  // const [cart, setCart] = useState([]);
-  // const { cartProducts, setCartProducts } = useContext(CartContext);
+
   const [message, setMessage] = useState("");
 
   const [showDescription, setShowDescription] = useState(true);
@@ -37,7 +36,7 @@ const ProductDetailpage = () => {
         setShowAlert(false);
       }, 5000);
       return () => {
-        clearTimeout(timeout); //เพื่อไม่ให้มันทำซ้ำ
+        clearTimeout(timeout); 
       };
     }
   }, [showAlert]);
@@ -100,7 +99,7 @@ const ProductDetailpage = () => {
 
 export default ProductDetailpage;
 
-// หาสินค้าจากไอดี
+
 function findProductById(id) {
 
   for (const category in ProductsData) {
@@ -115,10 +114,3 @@ function findProductById(id) {
   return null;
 }
 
-// console.log(addtoCart);
-// const addToCart = () => {
-//   const newItem = { ...product };
-//   setCart([...cart, newItem]);
-//   setMessage(`${product.name} has been added to your cart.`);
-// };
-// console.log(cart);

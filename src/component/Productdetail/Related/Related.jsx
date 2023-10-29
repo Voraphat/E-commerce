@@ -1,7 +1,6 @@
 import './Related.css'
 
 function RelatedProducts({ productDetailId, allProducts }) {
-  // สร้างรายการสินค้าสุ่มโดยไม่ซ้ำกับสินค้าที่กำลังแสดง
   const getRandomProducts = (productDetailId, allProducts) => {
     const productsWithoutDetail = allProducts.filter(product => product.id !== productDetailId);
     const randomProducts = new Set(); 

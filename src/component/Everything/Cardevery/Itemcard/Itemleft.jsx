@@ -6,9 +6,7 @@ import './Itemleft.css'
 
 
 
-// eslint-disable-next-line react/prop-types
 const Itemleft = ({searchTerm,handleSearch,}) => {
-  // console.log("products",ProductsData.Groceries,ProductsData.Juicedata)
 
   return (
         <div className="left">

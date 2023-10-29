@@ -1,7 +1,7 @@
 import '../../Productpage.css'
 
 
-// eslint-disable-next-line react/prop-types
+
 const Itemevery = ({Head,detail,img,para,onProductClick}) => {
   return (
     
@@ -13,7 +13,7 @@ const Itemevery = ({Head,detail,img,para,onProductClick}) => {
           
               <span>{detail}</span>
               <h4>{Head}</h4>
-              <p>{para}.00 $</p>
+              <p>{para}$</p>
 
         </div>
       </div>

@@ -8,7 +8,6 @@ import Aboutpage from "./page/Aboutpage.jsx";
 import Contactpage from "./page/Contactpage.jsx";
 import ProductDetailpage from "./page/ProductDetailpage.jsx";
 import Cartpage from "./page/Cartpage.jsx"
-// import Reviews from "./component/Productdetail/Reviews/Reviews.jsx";
 import { CartContextProvider } from "./function/CartContext";
 import Checkoutpage from "./page/Checkoutpage.jsx";
 
@@ -46,10 +45,7 @@ const router = createBrowserRouter([
     path: "/productdetail/:id",
     element: <ProductDetailpage />,
   },
-  // {
-  //   path: "/product/:id/reviews",
-  //   element: <Reviews />,
-  // },
+
   {
     path: "/cartproduct",
     element: <Cartpage/>,

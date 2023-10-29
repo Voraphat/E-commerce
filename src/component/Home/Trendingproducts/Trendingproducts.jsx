@@ -8,12 +8,7 @@ import img4 from "../../../assets/img3.jpg";
 import { datatrending } from "../../../Data/Product";
 
 const Trendingproducts = () => {
-  // const databest = [
-  //     { Head: "Assorted Coffee", detail: "Groceries", para: "$35.00" ,img:img1},
-  //     { Head: "Fresh Orange Juice", detail: "Groceries", para: "$18.00" ,img:img2 },
-  //     { Head: "Hand Sanitizer", detail: "Groceries", para: "$15.00" , img:img3 },
-  //     { Head: "Handpicked Red Chillies", detail: "Groceries", para: "$19.00", img:img4},
-  //   ];
+
 
   return (
     <div className="Bestprodcuts">

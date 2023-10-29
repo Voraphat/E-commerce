@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import "./Productpage.css";
 import { useState } from "react";
 import Itemevery from "./Cardevery/Itemcard/Itemevery";
@@ -11,17 +10,14 @@ const Productpage = ({ products, pageTitle, detailpage }) => {
 
   const [searchResults, setSearchResults] = useState(products);
 
-  const [currentPage, setCurrentPage] = useState(1); // แสดงเป็นหน้าแรก
+  const [currentPage, setCurrentPage] = useState(1); 
 
-  const itemsPerPage = 9; // มี9ชิ้นต่อหน้า
+  const itemsPerPage = 9; 
 
-  // เมื่อค้นหาให้เอาค่าไปเก็บใน value และไปเก็บใน setSearch
 
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
-
-    // กรองออบเจกต์ที่มีชื่อหรือราคาตรงกับคำค้นหา
 
     const results = products.filter(
       (item) =>
@@ -30,16 +26,13 @@ const Productpage = ({ products, pageTitle, detailpage }) => {
     );
 
     setSearchResults(results);
-    setCurrentPage(1); // เมื่อค้นหาให้ใช้เป็นหน้าแรก
+    setCurrentPage(1); 
   };
 
-  // จำนวน searchResults หาร itemsPerPage เพื่อคิดจำนวนหน้า
+ 
   const totalPages = Math.ceil(searchResults.length / itemsPerPage);
-  // คำนวณ index ชิ้นแรกของรายการที่จะเริ่ม
   const startIndex = (currentPage - 1) * itemsPerPage;
-  // คำนวณ index ชิ้นสุดท้ายที่จะแสดงในหน้าปัจจุบัน
   const endIndex = startIndex + itemsPerPage;
-  // ใช้ตัดรายการ index ให้โชว์เฉพาะ ที่เราต้องการ
   const displayedItems = searchResults.slice(startIndex, endIndex);
 
   return (
@@ -56,8 +49,7 @@ const Productpage = ({ products, pageTitle, detailpage }) => {
           <div className="card-productpage">
             {searchResults.length === 0 ? (
               <q className="alert">
-                {" "}
-                No products were found matching your selection.{" "}
+                No products were found matching your selection.
               </q>
             ) : (
 
@@ -69,7 +61,7 @@ const Productpage = ({ products, pageTitle, detailpage }) => {
                     img={product.img}
                     Head={product.name}
                     detail={product.type}
-                    para={product.price}
+                    para={product.price.toFixed(2)}
                   />
                   
                 </Link>
@@ -79,14 +71,11 @@ const Productpage = ({ products, pageTitle, detailpage }) => {
           </div>
 
           <div className="pagination">
-            {/* สร้าง array ใหม่ โดยเอาจำนวน totalpages มา map */}
             {Array.from({ length: totalPages }).map((_, index) => (
-              //  หน้าปัจจุบัน = index +1 เพื่อแสดงจำนวนหน้า
               <button
                 className={currentPage === index}
                 onClick={() => setCurrentPage(index + 1)}
               >
-                {/* จำนวนหน้า +1 */}
                 {index + 1}
               </button>
             ))}

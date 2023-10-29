@@ -1,11 +1,14 @@
 import { ProductsData } from "../../../Data/Product";
+
 import Productpage from "../Productpage";
 
 const Juice = () => {
   return (
     <div>
 
-      <Productpage
+      <Productpage 
+
+
 
         pageTitle={"Juice"}
 

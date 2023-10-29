@@ -15,13 +15,12 @@ function DropdownItem({ title, content }) {
       <div className="wrapper-item-dropdown">
         <div ref={parent}  onClick={handleToggle}>
           {!Open ? (
-            // หัวข้อก่อนกด
+       
             <p>
               {title}
               <IoMdArrowDropright />
             </p>
           ) : (
-            // หัวข้อหลังกด
             <p>
               {title}
               <IoMdArrowDropdown />
@@ -29,7 +28,6 @@ function DropdownItem({ title, content }) {
           )}
         </div>
 
-            {/* เนื้อหาเมื่อกดดรอปดาว */}
         {Open && (
           <div className="content-dropdown">
             <p>{content}</p>

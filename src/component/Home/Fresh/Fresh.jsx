@@ -22,32 +22,6 @@ const Fresh = () => {
 
 export default Fresh;
 
-{
-  /* <Itemfresh Head={e.Head} detail={e.detail} para={e.para} img={e.img}/> */
-}
 
-{
-  /* <div className="card2"> 
-          <Itemfresh
-          heading={datafresh[0].heading}
-          detail={datafresh[0].detail}
-          bgimg={datafresh[0].bgimg}
-          />
-        </div>
 
-        <div className="card2"> 
-          <Itemfresh
-          heading={datafresh[1].heading}
-          detail={datafresh[1].detail}
-          bgimg={datafresh[1].bgimg}
-          />
-        </div>
 
-        <div className="card2"> 
-          <Itemfresh
-          heading={datafresh[2].heading}
-          detail={datafresh[2].detail}
-          bgimg={datafresh[2].bgimg}
-          />
-        </div> */
-}

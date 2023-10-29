@@ -8,7 +8,6 @@ const Cartproduct = () => {
   const { cartProducts, setCartProducts, totalCartPrice } =
     useContext(CartContext);
 
-  // นับสินค้าซ้ำ
   const countDuplicateProducts = () => {
     const productMap = new Map();
   
@@ -32,12 +31,11 @@ const Cartproduct = () => {
   };
   const duplicateProducts = countDuplicateProducts();
 
-  // ลบสินค้า
+
   const handleRemoveFromCart = (productId) => {
     const updatedCart = cartProducts.filter(
       (product) => product.id !== productId
     );
-    // console.log('Updated Cart:', updatedCart);
     setCartProducts(updatedCart);
   };
 
@@ -111,56 +109,5 @@ const Cartproduct = () => {
   );
 };
 
-// const { cartProducts, setCartProducts } = useContext(CartContext);
-//   const [groupedCartProducts, setGroupedCartProducts] = useState([]);
 
-//   useEffect(() => {
-//   // รวมราคาสินค้าที่ชื่อเหมือนกัน
-//   const updatedCart = cartProducts.reduce((acc, product) => {
-//     const existingProductIndex = acc.findIndex((item) => item.id === product.id);
-
-//     if (existingProductIndex !== -1) {
-//       acc[existingProductIndex].quantity += product.quantity;
-//       acc[existingProductIndex].totalPrice += parseFloat(product.price) * product.quantity;
-//     } else {
-//       acc.push({ ...product, totalPrice: parseFloat(product.price) * product.quantity });
-//     }
-//     return acc;
-//   }, []);
-
-//     setGroupedCartProducts(updatedCart);
-//   }, [cartProducts]);
-
-//   const handleRemoveFromCart = (productId) => {
-//     const updatedCart = groupedCartProducts.filter((product) => product.id !== productId);
-//     setGroupedCartProducts(updatedCart);
-//     // อัปเดตตะกร้าหลักด้วย `updatedCart`
-//     setCartProducts(updatedCart);
-//   };
-
-//   const handleQuantityChange = (productId, newQuantity) => {
-//     // ตรวจสอบว่า newQuantity ไม่น้อยกว่า 1
-//     newQuantity = Math.max(1, newQuantity);
-//     const updatedCart = groupedCartProducts.map((product) => {
-//       if (product.id === productId) {
-//         return {
-//           ...product,
-//           quantity: newQuantity,
-//           totalPrice: parseFloat(product.price) * newQuantity,
-//         };
-//       }
-//       return product;
-//     });
-
-//     setGroupedCartProducts(updatedCart);
-//     // อัปเดตตะกร้าหลักด้วย `updatedCart`
-//     setCartProducts(updatedCart);
-//   };
-
-//   const calculateTotal = () => {
-//     // คำนวณราคารวมจาก `cartProducts`
-//     return cartProducts.reduce((total, product) => {
-//       return total + parseFloat(product.price) * product.quantity;
-//     }, 0);
-//   };
 export default Cartproduct;
