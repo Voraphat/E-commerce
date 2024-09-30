@@ -18,6 +18,7 @@ const About = () => {
           
           <div className="letf-about">
             <h2>We Are Your Favourite Store.</h2>
+            
             <p>
               Tuas quisquam quo gravida proident harum, aptent ligula anim
               consequuntur, ultrices mauris, nunc voluptates lobortis, varius,
